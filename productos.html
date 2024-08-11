@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos los Productos - TodoDrones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png" alt="TodoDrones Logo" height="50">
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-extras d-none d-lg-flex align-items-center">
+                <input type="text" class="form-control me-3" placeholder="Buscar...">
+                <a href="#" class="cart text-dark"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Filtros -->
+    <section class="filters py-5">
+        <div class="container">
+            <h2 class="section-title">Catálogo de Productos</h2>
+            <div class="row mb-4">
+                <div class="col-md-3">
+                    <select class="form-select" aria-label="Filtro de categoría">
+                        <option selected>Filtrar por categoría</option>
+                        <option value="1">Drones para principiantes</option>
+                        <option value="2">Drones profesionales</option>
+                        <option value="3">Accesorios</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row products-grid">
+                <div class="col-md-3 mb-4">
+                    <div class="product-item">
+                        <a href="producto-individual.html">
+                            <img src="images/product1.jpg" alt="Drone 1">
+                            <h5>Drone 1</h5>
+                            <p>$300</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="product-item">
+                        <a href="producto-individual.html">
+                            <img src="images/product2.jpg" alt="Drone 2">
+                            <h5>Drone 2</h5>
+                            <p>$450</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="product-item">
+                        <a href="producto-individual.html">
+                            <img src="images/product3.jpg" alt="Drone 3">
+                            <h5>Drone 3</h5>
+                            <p>$600</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="product-item">
+                        <a href="producto-individual.html">
+                            <img src="images/product4.jpg" alt="Drone 4">
+                            <h5>Drone 4</h5>
+                            <p>$800</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- Más productos... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <img src="images/logo-footer.png" alt="TodoDrones Logo" height="40" class="mb-3">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-white">Política de Privacidad</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Términos y Condiciones</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Contacto</a></li>
+            </ul>
+            <p class="mb-0">&copy; 2024 TodoDrones. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -153,3 +153,39 @@ body {
         font-size: 0.8em;
     }
 }
+/* Sección de Filtros */
+.filters .form-select {
+    max-width: 250px;
+}
+
+/* Sección de Productos */
+.products-grid .product-item {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products-grid .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.products-grid .product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Sección de Detalles del Producto */
+.product-details .price {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.product-details button {
+    margin-top: 20px;
+}
