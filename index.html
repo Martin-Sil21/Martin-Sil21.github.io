@@ -4,115 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consumer Drones - TodoDrones</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <a href="#">
-                    <img src="images/logo.png" alt="TodoDrones Logo">
-                </a>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Drones</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+    <header class="header bg-light shadow-sm fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a href="#" class="navbar-brand">
+                <img src="images/logo.png" alt="TodoDrones Logo" height="50">
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Drones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-            <div class="header-extras">
-                <input type="text" placeholder="Buscar...">
-                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Carrito</a>
+            <div class="header-extras d-none d-lg-flex align-items-center">
+                <input type="text" class="form-control me-3" placeholder="Buscar...">
+                <a href="#" class="cart text-dark"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </div>
     </header>
 
     <!-- Main Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Descubrí nuestros drones de consumo</h1>
-                <p>La mejor tecnología en drones al alcance de tu mano.</p>
-                <a href="#" class="btn-primary">Explorar</a>
-            </div>
+    <section class="hero bg-dark text-white d-flex align-items-center" style="background-image: url('images/hero-bg.jpg'); background-size: cover; background-position: center; height: 60vh;">
+        <div class="container text-center">
+            <h1 class="display-4">Descubrí nuestros drones de consumo</h1>
+            <p class="lead">La mejor tecnología en drones al alcance de tu mano.</p>
+            <a href="#" class="btn btn-primary btn-lg">Explorar</a>
         </div>
     </section>
 
     <!-- Product Categories Section -->
-    <section class="categories">
+    <section class="categories py-5">
         <div class="container">
-            <div class="category-grid">
-                <div class="category-item">
-                    <img src="images/category1.jpg" alt="Drones para principiantes">
-                    <h3>Drones para principiantes</h3>
-                    <p>Perfectos para iniciarte en el mundo de los drones.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="category-item card h-100">
+                        <img src="images/category1.jpg" class="card-img-top" alt="Drones para principiantes">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Drones para principiantes</h5>
+                            <p class="card-text">Perfectos para iniciarte en el mundo de los drones.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="category-item">
-                    <img src="images/category2.jpg" alt="Drones profesionales">
-                    <h3>Drones profesionales</h3>
-                    <p>Para los más exigentes, con la mejor tecnología.</p>
+                <div class="col-md-4 mb-4">
+                    <div class="category-item card h-100">
+                        <img src="images/category2.jpg" class="card-img-top" alt="Drones profesionales">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Drones profesionales</h5>
+                            <p class="card-text">Para los más exigentes, con la mejor tecnología.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="category-item">
-                    <img src="images/category3.jpg" alt="Accesorios">
-                    <h3>Accesorios</h3>
-                    <p>Completa tu experiencia con los mejores accesorios.</p>
+                <div class="col-md-4 mb-4">
+                    <div class="category-item card h-100">
+                        <img src="images/category3.jpg" class="card-img-top" alt="Accesorios">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Accesorios</h5>
+                            <p class="card-text">Completa tu experiencia con los mejores accesorios.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Featured Products Section -->
-    <section class="featured-products">
+    <section class="featured-products py-5 bg-light">
         <div class="container">
-            <h2 class="section-title">Productos Destacados</h2>
-            <div class="products-grid">
-                <div class="product-item">
-                    <img src="images/product1.jpg" alt="Drone 1">
-                    <h3>Drone 1</h3>
-                    <p>El mejor drone para principiantes.</p>
+            <h2 class="section-title text-center mb-5">Productos Destacados</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="product-item card h-100">
+                        <img src="images/product1.jpg" class="card-img-top" alt="Drone 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Drone 1</h5>
+                            <p class="card-text">El mejor drone para principiantes.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-item">
-                    <img src="images/product2.jpg" alt="Drone 2">
-                    <h3>Drone 2</h3>
-                    <p>El drone profesional más vendido.</p>
+                <div class="col-md-3 mb-4">
+                    <div class="product-item card h-100">
+                        <img src="images/product2.jpg" class="card-img-top" alt="Drone 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Drone 2</h5>
+                            <p class="card-text">El drone profesional más vendido.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-item">
-                    <img src="images/product3.jpg" alt="Drone 3">
-                    <h3>Drone 3</h3>
-                    <p>Accesorios premium para todos tus drones.</p>
+                <div class="col-md-3 mb-4">
+                    <div class="product-item card h-100">
+                        <img src="images/product3.jpg" class="card-img-top" alt="Drone 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Drone 3</h5>
+                            <p class="card-text">Accesorios premium para todos tus drones.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-item">
-                    <img src="images/product4.jpg" alt="Drone 4">
-                    <h3>Drone 4</h3>
-                    <p>Alta calidad y rendimiento garantizado.</p>
+                <div class="col-md-3 mb-4">
+                    <div class="product-item card h-100">
+                        <img src="images/product4.jpg" class="card-img-top" alt="Drone 4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Drone 4</h5>
+                            <p class="card-text">Alta calidad y rendimiento garantizado.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#"><img src="images/logo-footer.png" alt="TodoDrones Logo"></a>
-                </div>
-                <ul class="footer-links">
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <p>&copy; 2024 TodoDrones. Todos los derechos reservados.</p>
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <img src="images/logo-footer.png" alt="TodoDrones Logo" height="40" class="mb-3">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-white">Política de Privacidad</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Términos y Condiciones</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Contacto</a></li>
+            </ul>
+            <p class="mb-0">&copy; 2024 TodoDrones. Todos los derechos reservados.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
