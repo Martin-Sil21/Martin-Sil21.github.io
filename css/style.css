@@ -1,0 +1,184 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header nav {
+    float: right;
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.header .nav-links li {
+    margin-left: 20px;
+}
+
+.header .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.header .nav-links a:hover {
+    background-color: #555;
+}
+
+.banner {
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.banner .btn-cta {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.banner .btn-cta:hover {
+    background-color: #0056b3;
+}
+
+.about, .services, .portfolio, .contact {
+    padding: 50px 0;
+}
+
+.about h2, .services h2, .portfolio h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.services .services-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.service-item i {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.portfolio .portfolio-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    margin-bottom: 5px;
+}
+
+.contact form input, .contact form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
