@@ -1,11 +1,88 @@
-/* Animaciones y transiciones personalizadas */
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar Estilo Transparente */
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 10px 0;
+}
+
+/* Header Logo */
+.header .logo img {
+    max-height: 50px;
+}
+
+/* Navegación */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Estilo para las Categorías y Productos */
 .category-item, .product-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item img, .product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.category-item h5, .product-item h5 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.category-item p, .product-item p {
+    color: #555;
+    font-size: 0.95em;
 }
 
 .category-item:hover, .product-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Hero Section */
@@ -36,8 +113,34 @@
     }
 }
 
-/* Personalizaciones adicionales para otros elementos */
+/* Footer */
 .footer a:hover {
     color: #007bff !important;
     text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .products-grid, .category-grid {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+    }
 }
